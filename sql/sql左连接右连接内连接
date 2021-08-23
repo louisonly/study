@@ -1,0 +1,9 @@
+left join
+保留左表记录，根据条件决定是否显示右表，如果不满足，则返回null
+在使用left join时，on和where 条件的区别如下：
+1. on条件是在生成临时表的时使用的条件，它不管on中条件是否为真，都会返回左表中的记录
+2. where条件是在临时表生成后，再对临时表进行过滤的条件，这时已经没有left join的含义（必须返回左表记录），条件不为真的记录就全部过滤掉
+参考：
+https://zhuanlan.zhihu.com/p/366121415
+
+https://zhuanlan.zhihu.com/p/110184519
